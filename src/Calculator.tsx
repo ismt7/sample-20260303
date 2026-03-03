@@ -8,10 +8,10 @@ const buttonBase = [
   'focus:outline-[4px] focus:outline-auto',
 ].join(' ')
 
-const numBtn = `${buttonBase} bg-gray-700 hover:bg-gray-600`
-const opBtn = `${buttonBase} bg-indigo-600 hover:bg-indigo-500`
-const eqBtn = `${buttonBase} bg-green-600 hover:bg-green-500 col-span-2`
-const clearBtn = `${buttonBase} bg-red-600 hover:bg-red-500 col-span-2`
+const numBtn = `${buttonBase} bg-gray-200 hover:bg-gray-300 text-gray-800`
+const opBtn = `${buttonBase} bg-indigo-500 hover:bg-indigo-400`
+const eqBtn = `${buttonBase} bg-green-500 hover:bg-green-400 col-span-2`
+const clearBtn = `${buttonBase} bg-red-500 hover:bg-red-400 col-span-2`
 const zeroBtn = `${numBtn} col-span-2`
 
 function calculate(a: number, op: Operator, b: number): number {
@@ -83,11 +83,11 @@ function Calculator() {
   }
 
   return (
-    <div className="bg-gray-800 rounded-xl p-6 w-72 shadow-lg">
+    <div className="bg-white rounded-xl p-6 w-72 shadow-lg">
       <h2 className="text-lg font-bold mb-4 text-center">電卓</h2>
       <div
         aria-label="display"
-        className="bg-gray-900 rounded-lg px-4 py-3 mb-4 text-right text-2xl font-mono break-all min-h-[3rem]"
+        className="bg-gray-100 rounded-lg px-4 py-3 mb-4 text-right text-2xl font-mono break-all min-h-[3rem] text-gray-900"
       >
         {display}
       </div>
