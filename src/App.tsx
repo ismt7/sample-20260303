@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import Calculator from './Calculator'
 
 const reactLogoClass = [
   'h-24 p-4 transition-all duration-300',
@@ -44,6 +45,9 @@ function App() {
         <p className="text-gray-400">
           Click on the Vite and React logos to learn more
         </p>
+        <div className="mt-8">
+          <Calculator />
+        </div>
       </main>
       <footer className="bg-gray-800 px-8 py-4 text-center text-gray-400 text-sm">
         <p>&copy; {new Date().getFullYear()} サンプルアプリ</p>
